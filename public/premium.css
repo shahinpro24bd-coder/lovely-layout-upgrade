@@ -609,7 +609,7 @@ html[lang="bn-off"] .hero-reference-word {
         width: auto;
         max-width: 720px;
         transform: none;
-        animation-name: heroGridRise;
+        animation-name: heroProofFloat;
     }
 
     .hero-reference-kicker { margin-bottom: 30px; font-size: 13px; }
