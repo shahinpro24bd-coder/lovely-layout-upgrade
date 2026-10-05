@@ -49,6 +49,24 @@
             margin: 0 auto;
         }
 
+        .about-reveal-left {
+            animation: aboutRevealLeft 0.75s ease-out both;
+        }
+
+        .about-reveal-right {
+            animation: aboutRevealRight 0.75s 0.12s ease-out both;
+        }
+
+        @keyframes aboutRevealLeft {
+            from { opacity: 0; transform: translateX(-24px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes aboutRevealRight {
+            from { opacity: 0; transform: translateX(24px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
         .about-portrait {
             position: relative;
             min-height: 650px;
@@ -316,6 +334,11 @@
         }
 
         @media (prefers-reduced-motion: reduce) {
+            .about-reveal-left,
+            .about-reveal-right {
+                animation: none;
+            }
+
             .about-portrait img,
             .about-cta {
                 transition: none;
